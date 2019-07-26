@@ -215,8 +215,8 @@ input::placeholder {
     // $db-gradient-step-1: #000000;
     // $db-gradient-step-2: #000000;
     // $db-gradient-step-3: #000000;
-    background: rgb(189,26,141);
-    background: radial-gradient(circle, rgba(189,26,141,1) 40%, rgb(158, 20, 117) 87%, rgb(155, 13, 115) 100%);
+    // background: rgb(189,26,141);
+    // background: radial-gradient(circle, rgba(189,26,141,1) 40%, rgb(158, 20, 117) 87%, rgb(155, 13, 115) 100%);
 
     // classbiz
     // background: rgb(119,48,121);
@@ -242,12 +242,10 @@ input::placeholder {
     // background: radial-gradient(circle, rgba(228,36,43,1) 40%, rgb(196, 30, 35) 67%, rgba(173,2,9,1) 100%);
 
     // swimbiz
-    // background: rgb(3, 112, 201);
-    // background: radial-gradient(circle, rgb(7, 121, 214) 40%, rgb(3, 112, 201) 67%, rgb(2, 77, 175) 100%);
+    background: rgb(3, 112, 201);
+    background: radial-gradient(circle, rgb(7, 121, 214) 40%, rgb(3, 112, 201) 67%, rgb(2, 77, 175) 100%);
 
     // tennisbiz
-    // background: rgb(228, 36, 43);
-    // background: radial-gradient(circle, rgba(228,36,43,1) 40%, rgb(196, 30, 35) 67%, rgba(173,2,9,1) 100%);
     // background: rgb(6,139,77);
     // background: radial-gradient(circle, rgb(19, 150, 89) 40%, rgb(7, 141, 79) 67%, rgb(3, 107, 58) 100%);
 
@@ -259,8 +257,8 @@ input::placeholder {
 // the small gradient
 @mixin gradient-2 {
     // dancebiz
-     background: rgb(189,26,141);
-     background: radial-gradient(circle, rgba(189,26,141) 25%, rgb(158, 20, 117) 85%,  rgb(158, 20, 117) 100%);
+    //  background: rgb(189,26,141);
+    //  background: radial-gradient(circle, rgba(189,26,141) 25%, rgb(158, 20, 117) 85%,  rgb(158, 20, 117) 100%);
  
     // classbiz
     //  background: rgb(150,62,153);
@@ -281,8 +279,8 @@ input::placeholder {
     // background: radial-gradient(circle, rgba(228,36,43,1) 40%, rgb(196, 30, 35) 67%, rgba(173,2,9,1) 100%);
 
     // swimbiz
-    // background: rgb(3, 112, 201);
-    // background: radial-gradient(circle, rgb(7, 121, 214) 40%, rgb(3, 112, 201) 67%, rgb(1, 89, 161) 100%);
+    background: rgb(3, 112, 201);
+    background: radial-gradient(circle, rgb(7, 121, 214) 40%, rgb(3, 112, 201) 67%, rgb(1, 89, 161) 100%);
 
     // tennisbiz
     // background: rgb(1,128,69);
@@ -418,7 +416,24 @@ input::placeholder {
     }
 }
 
+.nav-gradient-push {
+    position: relative;
+    z-index: 2;
+}
 
+.nav-gradient-bottom:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    left: -10%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0.3) 75%);
+    z-index: 1;
+    @include media-breakpoint-up(md) {
+        background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 25%, rgba(0,0,0,0.25) 65%, rgba(0,0,0,0.6) 100%);
+    }
+}
 
 /////////////////////////////////////////////////////////////////////////
 // Some styles must be placed below bootstrap.scss to be overidden
@@ -486,7 +501,7 @@ input::placeholder {
         width: 10px;
         height: 100%;
         display: block;
-        background-color: $primary;
+        background-color: $secondary;
         left: 0;
     }
     
@@ -576,21 +591,20 @@ input::placeholder {
 
 /* profile card styles end */
 
-.btn-outline-secondary {
-    color: $primary;
-    border: 1px solid $primary;
-}
+// .btn-outline-secondary {
+//     color: $primary;
+//     border: 1px solid $primary;
+// }
 
-.btn-outline-secondary:hover {
-    color: #fff;
-    background-color: $primary;
-    border: 1px solid $primary;
+// .btn-outline-secondary:hover {
+//     color: #fff;
+//     background-color: $primary;
+//     border: 1px solid $primary;
+// }
 
-}
-
-a.db-text-color-primary:hover {
-    color: #fff;
-}
+// a.db-text-color-primary:hover {
+//     color: #fff;
+// }
 
 /* pricing styles */
 .pricing-container-main {
@@ -718,6 +732,11 @@ a.db-text-color-primary:hover {
     background-color: darken($primary, 25%);
     box-shadow: 0 4px 0px darken($primary, 35%);
 }
+
+.button-shadow {
+    // box-shadow: 0 4px 0px $secondary;
+    box-shadow: 0 4px 0px darken($primary, 10%);
+};
 
 ///////////////////////////////////////////////////////////
 /* styles for download page only */
@@ -1726,4 +1745,22 @@ a.db-text-color-primary:hover {
     .product-name {
       margin-top: 30px;
     }
+  }
+
+
+  .iframe-container-footer {
+    overflow: hidden;
+    // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+    padding-top: 56.25%;
+    position: relative;
+    bottom: 20px;
+  }
+   
+  .iframe-container-footer iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
   }
