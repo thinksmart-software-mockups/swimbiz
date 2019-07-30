@@ -21,24 +21,9 @@ html {
 }
 
 /* smooth scroll end */
-.logo-icon-svg-shadow {
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
-}
-
-.generic-svg-shadow {
-  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
-}
-
 /* Updating All the Headings to Open Sans */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
-}
-
-/* main headline for all the biz products */
-.headline-svg-shadow {
-  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
 }
 
 /* right arrow appearing in the overviews page for the call to action card item */
@@ -47,12 +32,6 @@ h1, h2, h3, h4, h5, h6 {
   left: -19px;
   top: 35%;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
-}
-
-/* thinksmart logo effects */
-.thinksmart-logo-svg-shadow {
-  -webkit-filter: drop-shadow(0 0 6px black);
-  filter: drop-shadow(0 0 6px black);
 }
 
 /* Updating the colors for all biz products */
@@ -133,10 +112,6 @@ input::placeholder {
 }
 
 /* DanceBiz text utilities */
-.text-color-light-grey {
-  color: #c1c1c1;
-}
-
 /* All gradients readjusted */
 .hero-gradient-background {
   position: absolute;
@@ -156,20 +131,18 @@ input::placeholder {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #0370c9;
-  background: radial-gradient(circle, #0779d6 40%, #0370c9 67%, #0159a1 100%);
   box-shadow: inset 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(circle, #0779d6 40%, #0370c9 67%, #0159a1 100%);
 }
 
-.gradient-2 {
-  background: #0370c9;
+.gradient-small {
   background: radial-gradient(circle, #0779d6 40%, #0370c9 67%, #0159a1 100%);
   box-shadow: inset 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 .gradient-main-1 {
-  background: #0370c9;
   background: radial-gradient(circle, #0779d6 40%, #0370c9 67%, #024daf 100%);
+  box-shadow: inset 0px -43px 75px -100px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -178,10 +151,9 @@ input::placeholder {
   box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.4);
 }
 
-/* All gradients original code */
 .gradient-main-1 {
-  background: #0370c9;
   background: radial-gradient(circle, #0779d6 40%, #0370c9 67%, #024daf 100%);
+  box-shadow: inset 0px -43px 75px -100px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -9883,10 +9855,6 @@ h3 {
   }
 }
 
-.btn-outline-primary:hover {
-  color: #fff;
-}
-
 /* overview page */
 @media (min-width: 992px) {
   .overview-card-container-lg-and-xl {
@@ -9899,70 +9867,25 @@ h3 {
   }
 }
 
-.hero-max {
-  max-height: 400px;
-}
-
 /* dancebiz hero image styles */
 /* download page */
-@media (min-width: 992px) {
-  .db-hero-image {
-    position: absolute;
-    top: -195px;
-    width: 70%;
-    right: 4rem;
-  }
-}
-@media (min-width: 1200px) {
-  .db-hero-image {
-    top: -210px;
-    width: 60%;
-    right: 130px;
-  }
-}
 /* contact page */
-/* Ballerina image styles */
-.ballerina {
-  top: 5%;
-  left: 0;
-  z-index: 1;
-  width: 98%;
-}
-
-@media (min-width: 992px) {
-  .sign-up-border-left:before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 100%;
-    display: block;
-    background-color: #8ec9fa;
-    left: 0;
-  }
-}
-@media (min-width: 1200px) {
-  .ballerina {
-    top: -2rem;
-    left: -2%;
-    width: 100%;
-  }
-
-  .sign-up-border-left:before {
-    width: 15px;
-  }
-}
 /* profile card styles start */
 .profile-card {
   width: 100%;
 }
 @media (min-width: 576px) {
   .profile-card {
-    width: 205px;
+    width: 195px;
+  }
+}
+@media (min-width: 1200px) {
+  .profile-card {
+    width: 195px;
   }
 }
 
 .card-profile-picture-bg {
-  background: #0370c9;
   background: radial-gradient(circle, #0779d6 40%, #0370c9 67%, #0159a1 100%);
   width: 100%;
   height: 100%;
@@ -9989,119 +9912,28 @@ h3 {
   }
 }
 
-.profile-card-1 {
-  width: 330px;
-}
-@media (min-width: 576px) {
-  .profile-card-1 {
-    height: 80px;
-  }
-}
-
-.card-profile-pic-holder-1 {
-  width: 70px;
-  height: 70px;
-  border: 4px solid #fff;
-}
-@media (min-width: 576px) {
-  .card-profile-pic-holder-1 {
-    width: 70px;
-    height: 70px;
-    position: relative;
-    bottom: 0;
-    z-index: 1;
-  }
-}
-
-.card-profile-picture-bg-1 {
-  background: #0370c9;
-  background: radial-gradient(circle, #0779d6 40%, #0370c9 67%, #024daf 100%);
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px 5px 0 5px;
-}
-@media (min-width: 576px) {
-  .card-profile-picture-bg-1 {
-    border-radius: 5px 0 0 5px;
-  }
-}
-
 /* profile card styles end */
 /* pricing styles */
-@media (min-width: 992px) {
-  .pricing-container-main {
-    width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 1200px) {
-  .pricing-container-main {
-    width: 100%;
-  }
-}
-
-.pricing-container {
-  width: 155px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+.pricing-container-card {
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 576px) {
-  .pricing-container {
+  .pricing-container-card {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    width: 155px;
   }
 }
 @media (min-width: 768px) {
-  .pricing-container {
+  .pricing-container-card {
     width: 205px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .pricing-container {
-    width: 205px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.pricing-line-height {
-  line-height: 1.25rem;
-}
-
-.pricing-title {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  text-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-.pricing-bg:before {
-  content: "";
-  width: 100%;
-  background-color: #0370c9;
-  opacity: 0.1;
-  height: 80%;
-  position: absolute;
-  border-radius: 0.25rem;
-}
-@media (min-width: 1200px) {
-  .pricing-bg:before {
-    left: 1rem;
-    width: 90%;
   }
 }
 
 /* custom utilities (none found in bootstrap so have to make new ones) */
 .text-shadow {
   text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
-}
-
-.text-shadow-footer {
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .btn-dark {
@@ -10847,24 +10679,12 @@ h3 {
   }
 }
 
-.ballerina-pricing {
-  max-height: 300px;
-  width: auto;
-}
-
-.pricing-bg:after {
-  width: 100%;
-  height: 100%;
-  content: "";
-  position: absolute;
-  background-color: #f8f9fa;
-}
-
 @media (min-width: 992px) {
   .over-1000-students {
     min-height: 250px;
   }
 }
+
 .signup-icons {
   width: 60px;
 }
@@ -11039,6 +10859,22 @@ h3 {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+/* main headline for all the biz products */
+.headline-svg-shadow {
+  -webkit-filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.5));
+}
+
+.logo-icon-svg-shadow {
+  -webkit-filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.5));
+}
+
+.generic-svg-shadow {
+  -webkit-filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.5));
 }
 
 /*# sourceMappingURL=styles.css.map */
