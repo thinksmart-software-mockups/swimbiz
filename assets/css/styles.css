@@ -1,7 +1,8 @@
 @charset "UTF-8";
-/* DanceBiz Colors */
 /* ClassBiz Colors */
 /* ClassBiz Retheming */
+/* DanceBiz Colors */
+/* DanceBiz Retheming */
 /* GymnasticsBiz Colors */
 /* MusicBiz */
 /* SportsBiz */
@@ -119,16 +120,11 @@ input::placeholder {
 }
 
 .gradient-main-1 {
+  background: #0874cc;
   background: radial-gradient(circle, #0874cc 40%, #0570c7 67%, #1260c7 100%);
   box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-}
-
-.gradient-small {
-  background: radial-gradient(circle, #0874cc 40%, #0570c7 67%, #1260c7 100%);
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
 }
 
 .overflow-visible, .overflow-show {
@@ -9791,22 +9787,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.nav-gradient:after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 120%;
-  left: -10%;
-  background: black;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.3) 75%);
-  z-index: -1;
-}
-@media (min-width: 768px) {
-  .nav-gradient:after {
-    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.25) 65%, rgba(0, 0, 0, 0.6) 100%);
-  }
-}
-
 .nav-gradient-push {
   position: relative;
   z-index: 2;
@@ -9859,11 +9839,11 @@ h3 {
 }
 
 .card-profile-picture-bg {
-  background: radial-gradient(circle, #0874cc 40%, #0570c7 67%, #1260c7 100%);
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 5px 0 0 5px;
+  overflow: visible;
 }
 @media (min-width: 576px) {
   .card-profile-picture-bg {
@@ -9874,7 +9854,7 @@ h3 {
 .card-profile-pic-holder {
   width: 70px;
   height: 70px;
-  border: 4px solid #fff;
+  border: 5px solid #fff;
 }
 @media (min-width: 576px) {
   .card-profile-pic-holder {
@@ -9882,7 +9862,7 @@ h3 {
     height: 80px;
     position: relative;
     bottom: -40px;
-    z-index: 1;
+    z-index: 9;
   }
 }
 
@@ -10630,7 +10610,6 @@ h3 {
   }
 }
 
-/* bg color check */
 @media (min-width: 992px) {
   .form-shadow {
     box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.25);
@@ -10831,8 +10810,15 @@ h3 {
 }
 @media (min-width: 992px) {
   .gradient-inset-shadow-deep {
-    box-shadow: inset 0px 0px 150px 45px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 200px 45px rgba(0, 0, 0, 0.3);
   }
+}
+
+.gradient-inset-shadow-footer {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
